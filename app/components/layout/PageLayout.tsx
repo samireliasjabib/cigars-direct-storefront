@@ -7,13 +7,14 @@ import type {
 } from 'storefrontapi.generated';
 import {Aside} from '~/components/Aside';
 import {Footer} from '~/components/Footer';
-import {Header, HeaderMenu} from '~/components/layout/Header';
 import {CartMain} from '~/components/CartMain';
 import {
   SEARCH_ENDPOINT,
   SearchFormPredictive,
 } from '~/components/SearchFormPredictive';
 import {SearchResultsPredictive} from '~/components/SearchResultsPredictive';
+import HeaderMenu from './header/components/HeaderMenu';
+import Header from './header';
 
 interface PageLayoutProps {
   cart: Promise<CartApiQueryFragment | null>;
